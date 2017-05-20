@@ -1,0 +1,22 @@
+- Preventive maintenance with additional suggestion
+	- Maintenance log
+	- Maintenance alerts / suggestion
+		- Per Vehicle
+		- Per Group
+	- Alert setting
+
+- Real-time performance monitoring
+	- Select Fields
+	- View mode
+		- Table
+		- Meters
+
+
+- Event based advertorial for stakeholders e.g. gas station, car dealers, service provider
+	- Popup Ads
+
+- Low cost fleet management with live tracking and driver identification
+- Insurance premium calculation based on driver’s score instead of vehicle
+- Alert and track security system based on geofencing technology
+- Traffic research with detail profiling i.e. vehicle type
+- Crash alert service

@@ -16,18 +16,26 @@
 
     function initMap() {
 
+      var latlong = {lat: -25.363, lng: 131.044};
+
       // Create a map object and specify the DOM element for display.
       var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
+        center: latlong,
         scrollwheel: false,
         zoom: 8
+      });
+
+      // Create a marker and set its position.
+      var marker = new google.maps.Marker({
+        map: map,
+        position: latlong,
+        title: 'Hello World!'
       });
     }
 
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1LE2hiQB2refszSwmTFDDO59bZRUgZic&callback=initMap" async defer></script>
 </head>
-
 <body>
   <div class="ui top inverted horizontal menu">
     <a class="launch icon item">
@@ -38,7 +46,43 @@
 
   <div class="ui main container">
     <h1 class="ui header">6 ชช 9425</h1>
-    <div>คมสันต์ งามดี 80 km/h</div>
+    <div class="ui secondary pointing menu">
+      <a class="active item">
+        Info
+      </a>
+      <a class="item">
+        Details
+      </a>
+      <a class="item">
+        Maintenance
+      </a>
+    </div>
+
+      <div class="ui small statistic">
+        <div class="value">
+          18.8
+        </div>
+        <div class="label">
+          km/l
+        </div>
+      </div>
+      <div class="ui small statistic">
+        <div class="value">
+          8:14
+        </div>
+        <div class="label">
+          hours
+        </div>
+      </div>
+      <div class="ui small statistic">
+        <div class="value">
+          2512
+        </div>
+        <div class="label">
+          km
+        </div>
+      </div>
+
     <div class="map" style="height: 300px" id="map"></div>
   </div>
 </body>

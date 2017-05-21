@@ -10,12 +10,22 @@
     crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
   <title>ANN: Vehicle</title>
-
   <script>
     $(document).ready(function () {
-      $('.menu .item').tab();
     });
+
+    function initMap() {
+
+      // Create a map object and specify the DOM element for display.
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        scrollwheel: false,
+        zoom: 8
+      });
+    }
+
   </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1LE2hiQB2refszSwmTFDDO59bZRUgZic&callback=initMap" async defer></script>
 </head>
 
 <body>
@@ -23,9 +33,13 @@
     <a class="launch icon item">
       <i class="content icon"></i>
     </a>
+    <div class="item">Vehicle Details: 6 ชช 9425</div>
   </div>
 
-  <div class="pusher">
+  <div class="ui main container">
+    <h1 class="ui header">6 ชช 9425</h1>
+    <div>คมสันต์ งามดี 80 km/h</div>
+    <div class="map" style="height: 300px" id="map"></div>
   </div>
 </body>
 </html>

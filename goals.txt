@@ -1,22 +1,76 @@
 - Preventive maintenance with additional suggestion
-	- Maintenance log
+	- Maintenance log  (Mob)
 	- Maintenance alerts / suggestion
-		- Per Vehicle
-		- Per Group
-	- Alert setting
+		- Per Vehicle   (Mob)
+		- Per Group    (Mob)
+	- Alert setting   (Mob)
 
-- Real-time performance monitoring
-	- Select Fields
-	- View mode
+- Real-time performance monitoring  (Mob)
+	- Select Fields    (Mob)
+	- View mode        (Mob)
 		- Table
 		- Meters
 
 
 - Event based advertorial for stakeholders e.g. gas station, car dealers, service provider
-	- Popup Ads
+	- Popup Ads  (Mob)
 
 - Low cost fleet management with live tracking and driver identification
+  - Vehicle
+  - Driver
+  -
+
 - Insurance premium calculation based on driver’s score instead of vehicle
+
+
 - Alert and track security system based on geofencing technology
 - Traffic research with detail profiling i.e. vehicle type
 - Crash alert service
+
+Registration
+- Register new account (Individual - Free)
+
+Payment
+- Connect to payment gateway / paypal
+
+History
+
+Home
+
+Show all active vehicles the ones with engine issue will be in alert section.
+Alerts
+
+Vehicles
+Devices
+Active Vehicle List with Summary
+Vehicles (Search by PlateNo. / CallSign, Fuel Type)
+PlateNo, CallSign, Manufacturer, etc…
+Cost/Km
+Repair Suggestion
+Details and Real-time Stat
+Trips
+Maintenance Table
+Driver History (Top 10 - with link to the active one in the top)
+
+Drivers (Search by Name, Vehicles)
+Profile and Scores
+Name
+Km/Litre
+Score
+etc
+Trips (Top 10 - with link to the active one in the top)
+Leaderboard
+
+Trips (Search by Destination Area, Driver’s Name, Vehicles, Time)
+Map  (Google will charge for non-free app - To be confirmed)
+Data
+Devices (Search by Name)
+ID
+Name
+Configuration Parameters
+Firmware Status/Update Trigger
+Vehicle History (Top 10 - with link to the active one in the top)
+
+Mobile Only Pages
+
+Driver Pairing

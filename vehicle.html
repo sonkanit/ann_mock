@@ -12,17 +12,26 @@
   <title>ANN: Vehicle</title>
   <script>
     $(document).ready(function () {
+      var $menuItems = $('.pointing.menu .item');
+      $menuItems.on('click', function () {
+        $(this).addClass('active').closest('.ui.menu')
+          .find('.item').not($(this)).removeClass('active');
+      });
+
+      if (this.id === "trips") {
+
+      }
     });
 
     function initMap() {
 
-      var latlong = {lat: -25.363, lng: 131.044};
+      var latlong = {lat: 13.727092, lng: 100.541126};
 
       // Create a map object and specify the DOM element for display.
       var map = new google.maps.Map(document.getElementById('map'), {
         center: latlong,
         scrollwheel: false,
-        zoom: 8
+        zoom: 15
       });
 
       // Create a marker and set its position.
@@ -47,16 +56,16 @@
 
   <div class="ui main container">
     <div class="ui secondary pointing menu">
-      <a class="active item">
+      <a class="active item" id="info">
         Info
       </a>
-      <a class="item">
+      <a class="item" id="details">
         Details
       </a>
-      <a class="item">
+      <a class="item" id="maintenance">
         Maintenance
       </a>
-      <a class="item">
+      <a class="item" id="trip">
         Trips
       </a>
     </div>

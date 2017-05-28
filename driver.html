@@ -12,17 +12,25 @@
   <title>ANN: Driver</title>
   <script>
     $(document).ready(function () {
+      var $menuItems = $('.pointing.menu .item');
+      $menuItems.on('click', function () {
+        $(this).addClass('active').closest('.ui.menu')
+          .find('.item').not($(this)).removeClass('active');
+
+        var segmentId = '#segment_' + this.id.replace('menu_', '');
+        $('html,body').animate({ scrollTop: $(segmentId).offset().top}, 'slow');
+      });
     });
 
     function initMap() {
 
-      var latlong = {lat: -25.363, lng: 131.044};
+      var latlong = {lat: 13.727092, lng: 100.541126};
 
       // Create a map object and specify the DOM element for display.
       var map = new google.maps.Map(document.getElementById('map'), {
         center: latlong,
         scrollwheel: false,
-        zoom: 8
+        zoom: 15
       });
 
       // Create a marker and set its position.
@@ -47,15 +55,15 @@
 
   <div class="ui main container">
     <div class="ui secondary pointing menu">
-      <a class="active item">
+      <a class="active item" id="menu_info">
         Info
       </a>
-      <a class="item">
+      <a class="item" id="menu_trips">
         Trips
       </a>
     </div>
 
-    <div class="ui segment">
+    <div class="ui segment" id="segment_info">
       <div class="card">
         <div class="ui small image">
           <img src="images/somchai.jpg">
@@ -103,7 +111,7 @@
       </div>
       <div class="ui small statistic">
         <div class="value">
-          2512
+          251
         </div>
         <div class="label">
           km
@@ -111,6 +119,18 @@
       </div>
     </div>
     <div class="map" style="height: 300px" id="map"></div>
+
+    <div class="ui segment" id="segment_trips">
+      <h3 class="ui header">Recent Trips</h1>
+      <ul>
+        <li><a href="trip.html">Nov 21, 2017 20:01 - 20:30 Lumpini - Sathorn</a></li>
+        <li><a href="trip.html">Nov 21, 2017 20:01 - 20:30 Lumpini - Sathorn</a></li>
+        <li><a href="trip.html">Nov 21, 2017 20:01 - 20:30 Lumpini - Sathorn</a></li>
+        <li><a href="trip.html">Nov 21, 2017 20:01 - 20:30 Lumpini - Sathorn</a></li>
+        <li><a href="trip.html">Nov 21, 2017 20:01 - 20:30 Lumpini - Sathorn</a></li>
+      </ul>
+      <div style="text-align: right;"><a href="trips.html">more...</a></div>
+    </div>
   </div>
 </body>
 </html>
